@@ -14,13 +14,21 @@
  <script type="text/javascript">
 $(document).ready(function(){ 
  
+ var time = new Date();
+ var hr = time.getHours();
+
+  if (hr > 19 || hr < 7)
+	{
+     $('.section_1').css("font-weight", "bolder");
+     $('dt').css("text-decoration", "underline");
+	}
+	
  
   $('.section_1').click(function(){
 	  alert("Do not copy.");
   });
  
   $	('#b1').click(function(){
-	  $('dt').css("font-size", "22px"); 
 	  $('dd').css("font-size", "18px"); 
   });
   
