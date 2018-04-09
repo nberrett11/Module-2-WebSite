@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <title>GitHubDemo</title>
@@ -8,28 +9,32 @@
    <head>
       <meta charset="UTF-8">
       
-      
- <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-
-<script type="text/javascript">
-$(document).ready(function(){ 
- $	('#area').hover(function(){
-	  alert("Close me to turn the box green.");
-  },
-  function(){
-	  $(this).css("background-color", "green");
-	  
-  });
+    <script type='text/javascript' src= 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
  
-  $	('#reset').click(function(){
-	  $('#area').css("background-color", "#953674");
+ <script type="text/javascript">
+$(document).ready(function(){ 
+ 
+  $	('#b1').click(function(){
+	  $('dt').css("font-size", "22px"); 
+	  $('dd').css("font-size", "18px"); 
+  });
+  
+  $	('#b2').click(function(){
+	  $('dt').css("font-size", ""); 
+	  $('dd').css("font-size", ""); 
+  });
+  
+  $	('dt').hover(function(){
+      $(this).css("background-color", "#FFFF00");
+  },
+    function(){
+    $( this ).css("background-color", "");
 	  
   });
   	 
-});     
-      
-      
-      
+});
+
+</script>
       
       
       
@@ -91,9 +96,11 @@ $(document).ready(function(){
       <img src="http://res.cloudinary.com/dg2pr3pkx/image/upload/v1521895976/SchoolPhoto.jpg" width="64" height="64" >
       </div>
       
+ <div><button id="b1">click to enlarge text</button> <button id="b2">click to reset text</button></div> 
+    
 <section class=" section_1">
   <dt>Experience with web design:</dt>
-        <dd>My experience with web design is limited to classroom settings only, although I have edited HTML code and published web pages for devices within the building automation industry. While this is just my second class in web design I have learned a lot so far. 
+        <dd>My experience with web design is limited to classroom settings only, although I have edited HTML code and published wbe pages for devices within the building automation industry. While this is just my second class in web design I have learned a lot so far. 
         </dd>
       <dt>Hopes for this course:</dt>
        <dd>Now that this course has begun and I have a better idea what it covers I hope to gain more experience working with GIT and collaborating in a software development/coding team enviornment.
@@ -108,11 +115,3 @@ $(document).ready(function(){
    </body>
 </html>
       
-   
-
-
-      
-
-
-      
-
